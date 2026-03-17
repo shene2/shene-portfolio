@@ -20,13 +20,13 @@ body {
 /* TEXT */
 h1 {
     font-size: 48px;
-    color: #d8b4fe; /* pastel purple */
+    color: #d8b4fe;
     margin-bottom: 10px;
 }
 
 p {
     font-size: 18px;
-    color: #a5b4fc; /* pastel blue */
+    color: #a5b4fc;
     margin-bottom: 20px;
 }
 
@@ -34,7 +34,7 @@ p {
 button {
     padding: 12px 24px;
     border: none;
-    background: #f9a8d4; /* pastel pink */
+    background: #f9a8d4;
     color: #0f0f1a;
     border-radius: 25px;
     cursor: pointer;
@@ -58,7 +58,60 @@ button:hover {
     100% { transform: translateY(0px); }
 }
 
-/* RESPONSIVE DESIGN */
+/* PROJECT SECTION */
+.projects {
+    padding: 60px 20px;
+    background: #0f0f1a;
+}
+
+.projects h2 {
+    font-size: 36px;
+    color: #f9a8d4;
+    margin-bottom: 30px;
+}
+
+/* CARD CONTAINER */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    background: #1a1a2e;
+    padding: 20px;
+    width: 250px;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(249, 168, 212, 0.2);
+}
+
+/* CARD HOVER */
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 25px rgba(249, 168, 212, 0.6);
+}
+
+/* CARD TEXT */
+.card h3 {
+    color: #d8b4fe;
+}
+
+.card p {
+    font-size: 14px;
+    color: #a5b4fc;
+}
+
+/* CARD BUTTON */
+.card button {
+    margin-top: 10px;
+    background: #c084fc;
+    color: #0f0f1a;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
     h1 {
         font-size: 28px;
@@ -71,5 +124,10 @@ button:hover {
     button {
         padding: 10px 20px;
         font-size: 14px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
