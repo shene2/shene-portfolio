@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -6,7 +7,7 @@ body {
     text-align: center;
 }
 
-
+/* HERO SECTION */
 .hero {
     height: 100vh;
     display: flex;
@@ -16,25 +17,29 @@ body {
     background: radial-gradient(circle, #1f1f3a, #0f0f1a);
 }
 
-
+/* TEXT */
 h1 {
     font-size: 48px;
-    color: #d8b4fe; 
+    color: #d8b4fe; /* pastel purple */
+    margin-bottom: 10px;
 }
 
 p {
-    color: #a5b4fc; 
+    font-size: 18px;
+    color: #a5b4fc; /* pastel blue */
+    margin-bottom: 20px;
 }
 
-
+/* BUTTON */
 button {
     padding: 12px 24px;
     border: none;
-    background: #f9a8d4; 
+    background: #f9a8d4; /* pastel pink */
     color: #0f0f1a;
     border-radius: 25px;
     cursor: pointer;
-    transition: 0.3s;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
@@ -42,13 +47,29 @@ button:hover {
     background: #f472b6;
 }
 
+/* FLOAT ANIMATION */
+.hero h1 {
+    animation: float 3s ease-in-out infinite;
+}
 
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     h1 {
         font-size: 28px;
     }
 
     p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
         font-size: 14px;
     }
 }
