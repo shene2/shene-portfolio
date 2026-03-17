@@ -2,9 +2,9 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #0f0f1a;
-    color: #f1f1f1;
-    text-align: center;
+  body {
+    background: red;
+}
 }
 
 /* HERO SECTION */
