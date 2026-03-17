@@ -2,9 +2,9 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-  body {
-    background: red;
-}
+    background: #0f0f1a;
+    color: #f1f1f1;
+    text-align: center;
 }
 
 /* HERO SECTION */
@@ -22,6 +22,7 @@ h1 {
     font-size: 48px;
     color: #d8b4fe;
     margin-bottom: 10px;
+    animation: float 3s ease-in-out infinite;
 }
 
 p {
@@ -48,10 +49,6 @@ button:hover {
 }
 
 /* FLOAT ANIMATION */
-.hero h1 {
-    animation: float 3s ease-in-out infinite;
-}
-
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
